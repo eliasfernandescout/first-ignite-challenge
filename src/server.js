@@ -103,6 +103,8 @@ app.delete('/todos/:id', (request, response)=>{
   }
   user.todos.splice(todoIndex);
 
+  return response.status(204).send.json();
+
 })
 
 app.listen(5002, () => {
